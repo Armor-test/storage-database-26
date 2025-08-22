@@ -1,0 +1,36 @@
+# CODEOWNERS file for storage-database-26
+# Global owners - will be requested for all PRs
+* @Armor-test/unit-test @Armor-test/grp-integration @Armor-test/team-reporting
+
+# Directory ownership
+/plugins/ @Armor-test/team-notifications @Armor-test/squad-cache
+/internal/ @Armor-test/dept-billing @Armor-test/dept-identity @Armor-test/unit-devops
+/data/ @Armor-test/squad-research @Armor-test/grp-reporting
+/static/ @Armor-test/squad-database @Armor-test/team-security @Armor-test/dept-api
+/modules/ @Armor-test/unit-governance @Armor-test/grp-reporting @Armor-test/squad-database
+/core/ @Armor-test/squad-payments @Armor-test/team-notifications @Armor-test/squad-research
+/scripts/ @Armor-test/dept-automation @Armor-test/squad-product @Armor-test/dept-test
+/controllers/ @Armor-test/dept-reporting @Armor-test/dept-automation
+/public/ @Armor-test/dept-security @Armor-test/team-core @Armor-test/team-frontend
+/api/ @Armor-test/squad-api @Armor-test/squad-product
+/examples/ @Armor-test/dept-logging @Armor-test/squad-reporting @Armor-test/squad-product
+/extensions/ @Armor-test/squad-research @Armor-test/squad-qa @Armor-test/dept-ui
+
+# File type ownership
+*.h @Armor-test/team-notifications @Armor-test/squad-product @Armor-test/squad-research
+*.ts @Armor-test/grp-integration @Armor-test/team-reporting
+*.proto @Armor-test/dept-data @Armor-test/squad-database @Armor-test/dept-api
+*.tf @Armor-test/squad-cloud @Armor-test/grp-reporting
+*.rb @Armor-test/dept-identity @Armor-test/dept-logging
+*.ini @Armor-test/dept-notifications @Armor-test/squad-api @Armor-test/unit-devops
+*.lock @Armor-test/unit-test @Armor-test/squad-product @Armor-test/dept-release
+*.md @Armor-test/grp-search @Armor-test/grp-reporting
+*.graphql @Armor-test/squad-mobile @Armor-test/dept-billing @Armor-test/dept-api
+*.js @Armor-test/team-governance @Armor-test/squad-search
+*.sql @Armor-test/team-core @Armor-test/squad-ml @Armor-test/unit-test
+
+# Security and special files
+Dockerfile @Armor-test/devops @Armor-test/infra
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
